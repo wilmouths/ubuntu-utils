@@ -46,21 +46,21 @@ clear
 for choice in $choices
 do
   case $choice in
-    1) ./addons/$choice.sh;;
-    2) ./addons/$choice.sh;;
-    3) ./addons/$choice.sh;;
-    4) ./addons/$choice.sh;;
-    5) ./addons/$choice.sh;;
-    6) ./addons/$choice.sh;;
-    7) ./addons/$choice.sh;;
-    8) ./addons/$choice.sh;;
-    9) ./addons/$choice.sh;;
-    10) ./addons/$choice.sh;;
-    11) ./addons/$choice.sh;;
-    12) ./addons/$choice.sh;;
-    13) ./addons/$choice.sh;;
-    14) ./addons/$choice.sh;;
-    15) ./addons/$choice.sh;;
+    1) ./packages/$choice.sh;;
+    2) ./packages/$choice.sh;;
+    3) ./packages/$choice.sh;;
+    4) ./packages/$choice.sh;;
+    5) ./packages/$choice.sh;;
+    6) ./packages/$choice.sh;;
+    7) ./packages/$choice.sh;;
+    8) ./packages/$choice.sh;;
+    9) ./packages/$choice.sh;;
+    10) ./packages/$choice.sh;;
+    11) ./packages/$choice.sh;;
+    12) ./packages/$choice.sh;;
+    13) ./packages/$choice.sh;;
+    14) ./packages/$choice.sh;;
+    15) ./packages/$choice.sh;;
   esac
 done
 
