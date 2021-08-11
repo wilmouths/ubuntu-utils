@@ -13,6 +13,7 @@
 - Make
 - mkcert
 - nvm
+- Python
 - Peek
 - Signal
 - Tilix

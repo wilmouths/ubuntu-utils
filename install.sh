@@ -16,11 +16,12 @@ loadDialog () {
     8 'Make' $onoff
     9 'mkcert' $onoff
     10 'nvm' $onoff
-    11 'Peek' $onoff
-    12 'Signal' $onoff
-    13 'Tilix' $onoff
-    14 'VSCode' $onoff
-    15 'ZSH' $onoff
+    11 'Python' $onoff
+    12 'Peek' $onoff
+    13 'Signal' $onoff
+    14 'Tilix' $onoff
+    15 'VSCode' $onoff
+    16 'ZSH' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -61,6 +62,7 @@ do
     13) ./packages/$choice.sh;;
     14) ./packages/$choice.sh;;
     15) ./packages/$choice.sh;;
+    16) ./packages/$choice.sh;;
   esac
 done
 
