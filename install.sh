@@ -24,6 +24,7 @@ loadDialog () {
     16 'ZSH' $onoff
     17 'Albert' $onoff
     18 'Tweaks' $onoff
+    19 'Minikube' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -49,24 +50,25 @@ clear
 for choice in $choices
 do
   case $choice in
-    1) ./packages/$choice.sh;;
-    2) ./packages/$choice.sh;;
-    3) ./packages/$choice.sh;;
-    4) ./packages/$choice.sh;;
-    5) ./packages/$choice.sh;;
-    6) ./packages/$choice.sh;;
-    7) ./packages/$choice.sh;;
-    8) ./packages/$choice.sh;;
-    9) ./packages/$choice.sh;;
-    10) ./packages/$choice.sh;;
-    11) ./packages/$choice.sh;;
-    12) ./packages/$choice.sh;;
-    13) ./packages/$choice.sh;;
-    14) ./packages/$choice.sh;;
-    15) ./packages/$choice.sh;;
-    16) ./packages/$choice.sh;;
-    17) ./packages/$choice.sh;;
-    18) ./packages/$choice.sh;;
+    1) ./packages/curl.sh;;
+    2) ./packages/discord.sh;;
+    3) ./packages/docker.sh;;
+    4) ./packages/ffmpeg.sh;;
+    5) ./packages/firefox.sh;;
+    6) ./packages/git.sh;;
+    7) ./packages/keepassxc.sh;;
+    8) ./packages/make.sh;;
+    9) ./packages/mkcert.sh;;
+    10) ./packages/nvm.sh;;
+    11) ./packages/python.sh;;
+    12) ./packages/peek.sh;;
+    13) ./packages/signal.sh;;
+    14) ./packages/tilix.sh;;
+    15) ./packages/vscode.sh;;
+    16) ./packages/zsh.sh;;
+    17) ./packages/albert.sh;;
+    18) ./packages/tweaks.sh;;
+    19) ./packages/minikube.sh;;
   esac
 done
 
