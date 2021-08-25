@@ -22,6 +22,8 @@ loadDialog () {
     14 'Tilix' $onoff
     15 'VSCode' $onoff
     16 'ZSH' $onoff
+    17 'Albert' $onoff
+    18 'Tweaks' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -63,6 +65,8 @@ do
     14) ./packages/$choice.sh;;
     15) ./packages/$choice.sh;;
     16) ./packages/$choice.sh;;
+    17) ./packages/$choice.sh;;
+    18) ./packages/$choice.sh;;
   esac
 done
 

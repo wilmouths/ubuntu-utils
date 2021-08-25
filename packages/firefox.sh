@@ -9,6 +9,7 @@ loadDialog () {
     1 'Ghostery' $onoff
     2 'AdBlockPlus' $onoff
     3 'KeePassXC-Browser' $onoff
+    4 'GNOME Shell' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -45,11 +46,18 @@ keePassXCBrowser () {
   kill -9 $!
 }
 
+GNOMEShell () {
+  printf "\n[FireFox: install GNOME Shell plugin]\n"
+  firefox -slient https://addons.mozilla.org/firefox/downloads/file/898030/ &
+  kill -9 $!
+}
+
 for choice in $choices
 do
   case $choice in
     1) ghostery;;
     2) abp;;
     3) keePassXCBrowser;;
+    4) GNOMEShell;;
   esac
 done
