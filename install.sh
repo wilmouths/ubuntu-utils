@@ -15,13 +15,13 @@ loadDialog () {
     7 'KeePassXC' $onoff
     8 'Make' $onoff
     9 'mkcert' $onoff
-    10 'nvm' $onoff
+    10 'ZSH' $onoff
     11 'Python' $onoff
     12 'Peek' $onoff
     13 'Signal' $onoff
     14 'Tilix' $onoff
     15 'VSCode' $onoff
-    16 'ZSH' $onoff
+    16 'NVM' $onoff
     17 'Albert' $onoff
     18 'Tweaks' $onoff
     19 'Minikube' $onoff
@@ -59,13 +59,13 @@ do
     7) ./packages/keepassxc.sh;;
     8) ./packages/make.sh;;
     9) ./packages/mkcert.sh;;
-    10) ./packages/nvm.sh;;
+    10) ./packages/zsh.sh;;
     11) ./packages/python.sh;;
     12) ./packages/peek.sh;;
     13) ./packages/signal.sh;;
     14) ./packages/tilix.sh;;
     15) ./packages/vscode.sh;;
-    16) ./packages/zsh.sh;;
+    16) ./packages/nvm.sh;;
     17) ./packages/albert.sh;;
     18) ./packages/tweaks.sh;;
     19) ./packages/minikube.sh;;
