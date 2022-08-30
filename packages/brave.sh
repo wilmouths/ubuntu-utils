@@ -1,7 +1,13 @@
 #!/bin/bash
 
-printf "\n[Brave: install apt-transport-https cURL]\n"
-sudo apt install apt-transport-https curl -y
+if ! command -v curl &> /dev/null
+then
+  printf "\n[Brave: install cURL]\n"
+  sudo apt install curl -y
+fi
+
+printf "\n[Brave: install apt-transport-https]\n"
+sudo apt install apt-transport-https -y
 
 printf "\n[Brave: add GPG Key]\n"
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg

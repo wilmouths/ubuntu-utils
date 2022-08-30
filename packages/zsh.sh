@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if ! command -v curl &> /dev/null
+then
+  printf "\n[ZSH: install cURL]\n"
+  sudo apt install curl -y
+fi
+
 printf "\n[ZSH: installation]\n"
 sudo apt install zsh -y 
 
