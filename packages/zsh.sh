@@ -1,10 +1,16 @@
 #!/bin/bash
 
-printf "\n[ZSH: Install oh-my-zsh]\n"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if ! command -v curl &> /dev/null
+then
+  printf "\n[ZSH: install cURL]\n"
+  sudo apt install curl -y
+fi
 
 printf "\n[ZSH: installation]\n"
 sudo apt install zsh -y 
+
+printf "\n[ZSH: Install oh-my-zsh]\n"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 onoff=on
 
