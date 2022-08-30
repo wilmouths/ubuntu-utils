@@ -5,4 +5,4 @@ sudo add-apt-repository ppa:phoerious/keepassxc
 sudo apt update -y
 
 printf "\n[KeePassXC: install]\n"
-sudo apt install keepassxc
+sudo apt install keepassxc -y
