@@ -1,4 +1,6 @@
 #!/bin/bash
 
 printf "\n[Discord: install]\n"
-sudo snap install discord
+wget -o discord.deb https://discord.com/api/download?platform=linux&format=deb
+sudo dpkg -i ./discord.deb
+rm -r ./discord.deb

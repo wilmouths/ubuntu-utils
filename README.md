@@ -8,18 +8,25 @@
 - Docker
 - ffmpeg
 - FireFox (extensions)
+- Brave
 - Git
 - KeePassXC
 - Make
 - mkcert
-- nvm
+- ZSH
 - Python
 - Peek
 - Signal
 - Tilix
 - VSCode
-- ZSH
+- NVM
+- Minikube
+- Docker
 
 ## Author
 
-[@wilmouths](https://github.com/wilmouths/)
+## Contributors
+
+Thank you to all our [contributors](https://github.com/wilmouths/ubuntu-utils/graphs/contributors)!
+
+[![](https://contrib.rocks/image?repo=wilmouths/ubuntu-utils)](https://github.com/wilmouths/ubuntu-utils/graphs/contributors)

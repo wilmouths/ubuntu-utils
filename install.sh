@@ -11,20 +11,20 @@ loadDialog () {
     3 'Docker' $onoff
     4 'ffmpeg' $onoff
     5 'FireFox (extensions)' $onoff
-    6 'Git' $onoff
-    7 'KeePassXC' $onoff
-    8 'Make' $onoff
-    9 'mkcert' $onoff
-    10 'ZSH' $onoff
-    11 'Python' $onoff
-    12 'Peek' $onoff
-    13 'Signal' $onoff
-    14 'Tilix' $onoff
-    15 'VSCode' $onoff
-    16 'NVM' $onoff
-    17 'Albert' $onoff
-    18 'Tweaks' $onoff
-    19 'Minikube' $onoff
+    6 'Brave' $onoff
+    7 'Git' $onoff
+    8 'KeePassXC' $onoff
+    9 'Make' $onoff
+    10 'mkcert' $onoff
+    11 'ZSH' $onoff
+    12 'Python' $onoff
+    13 'Peek' $onoff
+    14 'Signal' $onoff
+    15 'Tilix' $onoff
+    16 'VSCode' $onoff
+    17 'NVM' $onoff
+    18 'Minikube' $onoff
+    19 'Docker' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -55,20 +55,20 @@ do
     3) ./packages/docker.sh;;
     4) ./packages/ffmpeg.sh;;
     5) ./packages/firefox.sh;;
-    6) ./packages/git.sh;;
-    7) ./packages/keepassxc.sh;;
-    8) ./packages/make.sh;;
-    9) ./packages/mkcert.sh;;
-    10) ./packages/zsh.sh;;
-    11) ./packages/python.sh;;
-    12) ./packages/peek.sh;;
-    13) ./packages/signal.sh;;
-    14) ./packages/tilix.sh;;
-    15) ./packages/vscode.sh;;
-    16) ./packages/nvm.sh;;
-    17) ./packages/albert.sh;;
-    18) ./packages/tweaks.sh;;
-    19) ./packages/minikube.sh;;
+    6) ./packages/brave.sh;;
+    7) ./packages/git.sh;;
+    8) ./packages/keepassxc.sh;;
+    9) ./packages/make.sh;;
+    10) ./packages/mkcert.sh;;
+    11) ./packages/zsh.sh;;
+    12) ./packages/python.sh;;
+    13) ./packages/peek.sh;;
+    14) ./packages/signal.sh;;
+    15) ./packages/tilix.sh;;
+    16) ./packages/vscode.sh;;
+    17) ./packages/nvm.sh;;
+    18) ./packages/minikube.sh;;
+    19) ./packages/Docker.sh;;
   esac
 done
 
