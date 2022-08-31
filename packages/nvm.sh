@@ -4,7 +4,7 @@ printf "\n[nvm: install]\n"
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 printf "\n[nvm: add nvm in shell]\n"
-if [[ -f ~/.zshrc ]]; then
+if [ $SHELL = $(which zsh) ]; then
   export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" >> ~/.zshrc
   source ~/.zshrc
