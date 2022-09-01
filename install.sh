@@ -24,6 +24,8 @@ loadDialog () {
     16 'VSCode' $onoff
     17 'NVM' $onoff
     18 'Minikube' $onoff
+    19 'Evolution' $onoff
+    20 'Mattermost' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -67,6 +69,8 @@ do
     16) ./packages/vscode.sh;;
     17) ./packages/nvm.sh;;
     18) ./packages/minikube.sh;;
+    19) ./packages/evolution.sh;;
+    20) ./packages/mattermost.sh;;
   esac
 done
 

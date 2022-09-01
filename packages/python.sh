@@ -30,7 +30,8 @@ python2 () {
 
   python2Path=$(which python2)
 
-  if [[ -f ~/.zshrc ]]; then
+  if [[ $SHELL == $(which zsh) ]]
+  then
     echo "export PYTHONPATH=$python2Path" >> ~/.zshrc
     source ~/.zshrc
     printf "add in ~/.zshrc\n"
@@ -46,7 +47,8 @@ python3 () {
   sudo apt install python3-dev python3-pip python3-setuptools -y
 
   python3Path=$(which python3)
-  if [[ -f ~/.zshrc ]]; then
+  if [[ $SHELL == $(which zsh) ]]
+  then
     echo "export PYTHONPATH=$python3Path" >> ~/.zshrc
     source ~/.zshrc
     printf "add in ~/.zshrc\n"
