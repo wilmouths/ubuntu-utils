@@ -28,6 +28,7 @@ loadDialog () {
     8 'DataPreview' $onoff
     9 'YAML' $onoff
     10 'Vetur' $onoff
+    11 'Todo Tree' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -98,6 +99,11 @@ vetur () {
   code --install-extension octref.vetur
 }
 
+todoTree () {
+  printf "\n[VSCode: install Todo Tree extension]\n"
+  code --install-extension Gruntfuggly.todo-tree
+}
+
 for choice in $choices
 do
   case $choice in
@@ -111,5 +117,6 @@ do
     8) dataPreview;;
     9) yaml;;
     10) vetur;;
+    11) todoTree;;
   esac
 done
