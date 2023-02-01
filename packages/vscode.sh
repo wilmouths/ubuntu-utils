@@ -29,6 +29,7 @@ loadDialog () {
     9 'YAML' $onoff
     10 'Vetur' $onoff
     11 'Todo Tree' $onoff
+    12 'Conventional Commits' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -104,6 +105,11 @@ todoTree () {
   code --install-extension Gruntfuggly.todo-tree
 }
 
+conventionalCommits () {
+  printf "\n[VSCode: install Conventional Commits extension]\n"
+  code --install-extension vivaxy.vscode-conventional-commits
+}
+
 for choice in $choices
 do
   case $choice in
@@ -118,5 +124,6 @@ do
     9) yaml;;
     10) vetur;;
     11) todoTree;;
+    12) conventionalCommits;;
   esac
 done
