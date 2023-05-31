@@ -30,6 +30,7 @@ loadDialog () {
     10 'Vetur' $onoff
     11 'Todo Tree' $onoff
     12 'Conventional Commits' $onoff
+    13 'GitLab Workflow' $onoff
   )
   choices=$("${cmd[@]}" "${options[@]}")
 }
@@ -110,6 +111,11 @@ conventionalCommits () {
   code --install-extension vivaxy.vscode-conventional-commits
 }
 
+gitlabWorkflow () {
+  printf "\n[VSCode: install GitLab Workflow extension]\n"
+  code --install-extension GitLab.gitlab-workflow
+}
+
 for choice in $choices
 do
   case $choice in
@@ -125,5 +131,6 @@ do
     10) vetur;;
     11) todoTree;;
     12) conventionalCommits;;
+    13) gitlabWorkflow;;
   esac
 done
